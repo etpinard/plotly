@@ -226,7 +226,7 @@ layout_style = {
                 "paper_bgcolor": "rgb(222,222,222)",                    # gray frame bg
                 'showlegend': False,
                 'hovermode': 'closest',
-                'title': "Mean daily surface air temperature anomalies [in deg. C] <br>\
+                'title': "Average daily surface air temperature anomalies [in deg. C] <br>\
                           from 2013-12-01 to 2014-01-31 with respect to 1981-2010 climatology",   
                 'titlefont': {'color':'rgb(0,0,0)', 'size':18},
                 'xaxis': {
@@ -244,7 +244,17 @@ layout_style = {
                           'zeroline': False,
                           'ticks': None,
                           'showticklabels': False
-                         }
+                         },
+                'annotations': [{
+                                'text': 'Data courtesy of <a href="http://www.esrl.noaa.gov/psd/data/composites/day/">NOAA Earth System Research Laboratory </a>',
+                                'xref': 'paper',
+                                'yref': 'paper',
+                                'x': 0,
+                                'y': -0.1,
+                                'align': 'left',
+                                'showarrow': False 
+                                }]
+                                
                 }
 
 # <markdowncell>
